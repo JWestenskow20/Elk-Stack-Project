@@ -45,10 +45,10 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 The machines on the internal network are not exposed to the public Internet. 
 
 Only the Jump Box machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
-- _TODO: Add whitelisted IP addresses_
+* 73.127.24.254 (Personal IP)
 
 Machines within the network can only be accessed by SSH.
-- _TODO: Which machine did you allow to access your ELK VM? What was its IP address?_
+* Web and Elk Servers
 
 A summary of the access policies in place can be found in the table below.
 
@@ -61,7 +61,7 @@ A summary of the access policies in place can be found in the table below.
 ### Elk Configuration
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
-- _TODO: What is the main advantage of automating configuration with Ansible?_
+* Automating the install procces lets you deploy multiple servers easily and quickly
 
 The playbook implements the following tasks:
 1. Installs Docker.io and pip3
